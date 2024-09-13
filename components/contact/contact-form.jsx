@@ -31,7 +31,7 @@ export default function ContactForm() {
       return setActiveNotification({
         message: "Pls fill all fields in the form!",
         title: "Form Validation Error",
-        status: "success",
+        status: "error",
       });
     }
 
