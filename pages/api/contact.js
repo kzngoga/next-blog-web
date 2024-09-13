@@ -21,9 +21,7 @@ export default async function handler(req, res) {
 
       client = await MongoClient.connect(apiUrl);
     } catch (error) {
-      return res
-        .status(500)
-        .json({ message: `${error.message} ${process.env.MONGODB_URI}` });
+      return res.status(500).json({ message: `${error.message}` });
     }
 
     try {
