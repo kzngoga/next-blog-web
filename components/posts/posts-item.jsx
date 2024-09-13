@@ -9,8 +9,6 @@ export default function PostItem({ post }) {
     year: "numeric",
   });
 
-  console.log("IMG", post);
-
   const imagePath = `/images/posts/${post.slug}/${post.image}`;
 
   return (
